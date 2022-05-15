@@ -1,4 +1,5 @@
-
+from school_schedule.student import Student
+from school_schedule.high_school_student import HighSchoolStudent
 
 #first instance
 quinn = Student(
@@ -38,3 +39,22 @@ claire.summary()
 # Extra:
 # - create a function that will return the student with more classes
 # - create a test for that function
+
+# instance od high school student
+Tres = HighSchoolStudent(
+                "Tres", 
+                "senior", 
+                [
+                    "Algebra", 
+                    "Writing"
+                ],
+                has_parking_pass= True,
+                clubs = ["NSBE", "Yearbook"]
+            )
+
+
+
+print(Tres.display_classes())
+
+Tres.join_club("coding")
+print(Tres.display_clubs())
